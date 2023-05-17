@@ -2,7 +2,8 @@ html
     head
         style
              include ./styles.css
-    body
+    body#element
+    
         title=title
         #header 
           ul#links
@@ -24,9 +25,12 @@ html
             li  Careers 
           ul
             li  Contact
+          ul 
+            li 
+               img#imagefb(src='../../pictures/fblogo.png')
               
         #about 
-          p About Us
+          p#us About Us
            #about1 
             ul 
                 li Team
@@ -37,31 +41,69 @@ html
             ul
                 li Careers
 
+        #team
+          p#heading A Passionate Team 
+        div#circle
+        
+        
+
         #offices
              p#office Offices
+              .flex-container
+                div#container 
+                   img#image(src='../../pictures/empire.jpeg')
+                   div 
+                   p#newyork New York
+          
+                div#container 
+                  img#image(src='../../pictures/san.jpg')
+                  div 
+                   p#newyork San Fransisco
+                div#container 
+                  img#image(src='../../pictures/london.jpg')
+                  div 
+                   p#newyork London
+              .flex-container2
+                div#container 
+                   img#image(src='../../pictures/cluj.jpg')
+                   div 
+                   p#newyork Mures
+                div#container 
+                  img#image(src='../../pictures/mures.jpg')
+                  div 
+                   p#newyork Cluj
+                div#container
+                  img#image(src='../../pictures/oradea.jpg')
+                  div 
+                   p#newyork Oradea
         #bg 
             #footer 
                 ul#links
-                    li#footerlink   Design
+                    li#footerlink   DESIGN
                 ul
-                    li#footerlink   Technology 
+                    li#footerlink   TECHNOLOGY 
                 ul
-                    li#footerlink   Products 
+                    li#footerlink   PRODUCTS 
                 ul
-                    li#footerlink   Labs 
+                    li#footerlink   LABS 
 
                 p#footerLateral Lateral, Inc is part of Lateral Group
 
                 ul#links2
-                    li#footerlink     About Us
+                    li#footerlink     ABOUT US
                 ul
-                    li#footerlink    Careers 
+                    li#footerlink    CAREERS 
                 ul
-                    li#footerlink    Contact Us
+                    li#footerlink    CONTACT US
             #row
-                span#social1 FACEBOOK 
-                span#social2 TWITTER
-                span#social3 EMAIL US
+              
+              img#images(src='../../pictures/fblogo.png')
+              span#social1 FACEBOOK 
+              img#images(src='../../pictures/twitterlogo.jpg')
+              span#social2 TWITTER
+              img#images(src='../../pictures/emaillogo.png')
+              span#social3 EMAIL US
+               
 
             p#center
                 | Copyright &copy; 2021 Lateral Inc. 
@@ -74,6 +116,9 @@ html
                 |  |
                 a(href='#') Cookies Policy  
                 span | THANKS FOR SCROLLING THIS FAR!!
+
+    script 
+            include ./script.js
             
         
                 
