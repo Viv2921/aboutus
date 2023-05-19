@@ -1,6 +1,10 @@
 const el = document.querySelector("#element");
 const circle = document.querySelector("#circle");
 
+function myFunction() {
+  ele.style.backgroundPositionX = 0 +"px", 0 +"px"
+}
+
 el.addEventListener("mousemove", (e) => {
   console.log("Mouse pos x, y", e.clientX, e.clientY);
   let mousePosX = e.clientX
@@ -10,8 +14,6 @@ el.addEventListener("mousemove", (e) => {
     let centerX = ele.offsetLeft + ele.offsetWidth / 2;
     let centerY = ele.offsetTop + ele.offsetHeight / 2;
     console.log(`image ${i}`,centerX, centerY , mousePosX, mousePosY)
-  //   let angle = getAngleDegree(centerX, centerY, mousePosX, mousePosY)
-  // console.log("Angle = ", angle)
   
   ele.style.backgroundPositionX = getImageXpostion(centerX, centerY, mousePosX, mousePosY);
   }
@@ -40,9 +42,7 @@ function getImageXpostion(centerX, centerY, mousePosX, mousePosY){
     posX = -870
   } else if(mousePosX > centerX && mousePosY > centerY){
     console.log("bottom left")
-
     posX = -630
-    
   } else if (mousePosX < centerX && mousePosY > centerY){
     console.log("bottom right")
 

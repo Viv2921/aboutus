@@ -29,7 +29,7 @@ html
             li 
                img#imagefb(src='../../pictures/fblogo.png')
               
-        #about 
+        #about
           p#us About Us
            #about1 
             ul 
@@ -44,9 +44,12 @@ html
         #team
           p#heading A Passionate Team
         div#heads(style='margin: 0px 290px')
-          div(style='display:flex; flex-direction: row; flex-wrap:wrap; gap:40px')
+          div(style='display:flex; flex-direction: row; flex-wrap:wrap; gap:10px;margin-top:20px')
             - for(var i=0; i<105; i++)
-              div#circle(class=`${i}` style=`background-image: url("https://www.lateral-inc.com/assets/img/team.jpg?v=8");  background-position-y: -${86*i}px;`)       
+              div#circle(class=`${i}` style=`background-image: url("https://www.lateral-inc.com/assets/img/team.jpg?v=8");  background-position-y: -${86*i}px;`)
+        div
+        a(style="margin-left:300px;text-decoration:none;color: #08c;",href='#') Join us!    
+        a(style="margin-left:850px;text-decoration:none;color: #08c;",href='#') Learn more about us    
         
         
 
