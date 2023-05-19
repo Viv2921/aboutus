@@ -43,9 +43,10 @@ html
 
         #team
           p#heading A Passionate Team
-        div#heads 
-        div#circle
-       
+        div#heads(style='margin: 0px 290px')
+          div(style='display:flex; flex-direction: row; flex-wrap:wrap; gap:40px')
+            - for(var i=0; i<105; i++)
+              div#circle(class=`${i}` style=`background-image: url("https://www.lateral-inc.com/assets/img/team.jpg?v=8");  background-position-y: -${86*i}px;`)       
         
         
 

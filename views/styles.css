@@ -282,11 +282,9 @@
  #circle{
    height: 60px;
  width: 60px;
- background-image: url('https://www.lateral-inc.com/assets/img/team.jpg?v=8');
+ 
  border-radius: 50%;
  background-repeat: no-repeat;
- margin-left:300px;
- background-position: -187px -15px;
  margin-top:20px;
 
  
