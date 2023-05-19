@@ -25,12 +25,13 @@ function getAngleDegree(originX, originY, targetX, targetY){
  return angle
 }
 
+
 function getImageXpostion(centerX, centerY, mousePosX, mousePosY){
   let posX = 0;
-  if(centerX === mousePosX && mousePosY > centerY){
+  if(Math.abs(centerX - mousePosX)<30 && mousePosY > centerY){
     console.log("bottom")
     posX = -700
-  } else if (centerX === mousePosX && mousePosY < centerY){
+  } else if (Math.abs(centerX - mousePosX)<30 && mousePosY < centerY){
     console.log("up")
     posX = -443;
   } else if (mousePosY === centerY && centerX < mousePosX){
