@@ -1,9 +1,6 @@
 const el = document.querySelector("#element");
 const circle = document.querySelector("#circle");
 
-function myFunction() {
-  ele.style.backgroundPositionX = 0 +"px", 0 +"px"
-}
 
 el.addEventListener("mousemove", (e) => {
   console.log("Mouse pos x, y", e.clientX, e.clientY);
